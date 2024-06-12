@@ -1,0 +1,256 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  @apply text-neutral-500;
+}
+
+::-webkit-file-upload-button {
+  font: inherit;
+  -webkit-appearance: button;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.btn {
+  margin-bottom: 0.5rem;
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  line-height: 1.2;
+  @apply text-neutral-700;
+}
+
+h1,
+.h1 {
+  font-size: 6rem;
+  line-height: 1;
+}
+
+h2,
+.h2 {
+  font-size: 3.5rem;
+}
+
+h3,
+.h3 {
+  font-size: 2rem;
+}
+
+h4,
+.h4 {
+  font-size: 1.5rem;
+}
+
+h5,
+.h5 {
+  font-size: 1.25rem;
+}
+
+h6,
+.h6 {
+  font-size: 1rem;
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+hr {
+  margin: 0;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.subheading {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.5rem;
+  @apply text-neutral-500;
+}
+
+.lead {
+  font-weight: 400;
+  font-size: 1.15;
+}
+
+.nav-list {
+  li {
+    padding: 8px 0px;
+
+    &:hover,
+    &.active {
+      color: #fff;
+      opacity: 1;
+    }
+  }
+}
+
+.menu-button {
+  border-radius: 10px;
+  border: 6px solid rgb(255, 255, 255, 0);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-color: rgb(255, 255, 255, 0.8);
+  }
+}
+
+#page-content {
+  section {
+    padding: 120px 16px;
+    @apply md:px-10;
+  }
+}
+
+.social-icons {
+  @apply flex gap-6 py-5;
+
+  .social-icon {
+    width: 56px;
+    aspect-ratio: 1;
+
+    @apply block rounded-full bg-neutral-700 hover:bg-primary-1
+    flex items-center justify-center text-white;
+  }
+}
+
+.education-container,
+.experience-container {
+  @apply flex flex-col gap-5;
+}
+
+.info-description {
+  @apply font-normal text-neutral-500 leading-8;
+
+  ul {
+    padding-left: 24px;
+  }
+}
+
+.button-style {
+  @apply rounded-full bg-neutral-700 hover:bg-primary-1 font-semibold;
+}
+
+.list-inline {
+  @apply flex gap-2;
+
+  img {
+    height: 60px;
+  }
+}
+
+.img-container {
+  @apply flex flex-wrap gap-2;
+
+  img {
+    height: 200px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+    border-width: 8px;
+    border-color: rgb(29, 177, 135);
+  }
+}
+
+.banner {
+  @apply border-[10px] border-primary-1 rounded-[20px] items-center justify-between p-5
+  shadow md:rounded-full;
+
+  img {
+    height: 50px;
+    display: inline-block;
+  }
+
+  span {
+    font-weight: 700;
+    font-size: 1.5rem;
+    display: inline-block;
+    text-align: center;
+
+    @apply md:text-5xl;
+  }
+
+  & > img:first-child {
+    display: block;
+    margin-inline: auto;
+    height: 50px;
+
+    @apply md:h-20;
+  }
+
+  .banner-message {
+    margin-inline: auto;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+}
+// ==============================================
