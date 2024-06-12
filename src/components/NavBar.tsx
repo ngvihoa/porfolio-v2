@@ -1,4 +1,3 @@
-import { twMerge } from "tailwind-merge";
 import ProfileImage from "../assets/profile.jpg";
 import { useState } from "react";
 import { MdOutlineMenuOpen } from "react-icons/md";
